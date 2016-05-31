@@ -1,0 +1,35 @@
+.task-list{
+	width: 260px;
+	min-height: 300px;
+	margin: 10px 10px;
+	padding: 5px;
+	background-color:  #e3e3e3;
+	border-radius: 10px
+}
+
+h3{
+	text-align: center;
+	color: #fff;
+
+}
+
+.task-list input, .task-list textarea {
+	width: 240px;
+	height: 30px;
+	display: block;
+	margin: 5px auto;
+	background-color: #f3f3f3;
+}
+
+#delete{
+	
+	background-color:#fff;
+	border:  2px dotted #000;
+	margin: 10px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+
+}
+
+	

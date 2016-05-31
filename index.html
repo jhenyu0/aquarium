@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To do list</title>
+	<link rel="stylesheet" href="stylesheet/main.css">
+	<link rel="stylesheet" href="stylesheet/bootstrap.css">
+	<link rel="stylesheet" href="stylesheet/jquery-ui.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-3">
+			<div class="task-list"  id="pending">
+				<h3>Pending</h3>
+			</div>
+		</div>
+	<div class="col-md-3">
+		<div class="task-list" id="doing">
+			<h3>Doing</h3>
+		</div>
+	</div>
+		<div class="col-md-3">
+			<div class="task-list" id="done">
+				<h3>Done</h3>
+			</div>
+		</div>
+		
+	<div class="col-md-3">
+		<div class="task-list">
+			<h3>Add a task</h3>
+
+			<form id="todo-form">
+				<input type="text" placeholder="title" id="title"/>
+				<input type="text" placeholder="date" id="date">
+				<textarea placeholder="content" id="description"> </textarea>
+				<input type="button" value="add" id="add"/>
+				<input type="button" value="clear" id="clear">
+			</form>
+				<div id="delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+				</div>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+	<script src="script/jquery-1.11.3.min.js"></script>
+	<script src="script/jquery-ui.min.js"></script>
+	<script src="script/main.js"></script>
+
+<script>
+	$("#date").datepicker();
+	$("#date").datepicker("option", "dateFormat", "yy-mm-dd")
+
+</script>
+	
+
+
+</body>
+</html>
